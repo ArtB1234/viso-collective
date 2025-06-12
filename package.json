@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prebuild": "echo 'Starting build process' && npm run lint --no-fix"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
