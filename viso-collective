@@ -1,0 +1,10 @@
+# VISO Collective
+
+A full-stack web app for photographers to connect, share, and grow with data managed in Airtable.
+
+## Tech Stack
+- Frontend: Next.js (App Router)
+- UI: TailwindCSS + Shadcn UI
+- Auth: NextAuth.js
+- Data: Airtable API integration
+- Monitoring: Sentry
