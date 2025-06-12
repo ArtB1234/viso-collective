@@ -26,11 +26,11 @@ export function SignOutButton({ className, variant = "outline" }: SignOutButtonP
   return (
     <Button 
       onClick={handleSignOut} 
-      isLoading={isLoading} 
+      disabled={isLoading}
       variant={variant}
       className={className}
     >
-      Sign out
+      {isLoading ? "Signing out..." : "Sign out"}
     </Button>
   );
 }
