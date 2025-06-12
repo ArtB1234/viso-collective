@@ -26,10 +26,10 @@ export function SignInButton({ provider = "google", className }: SignInButtonPro
   return (
     <Button 
       onClick={handleSignIn} 
-      isLoading={isLoading} 
+      disabled={isLoading}
       className={className}
     >
-      Sign in with {provider.charAt(0).toUpperCase() + provider.slice(1)}
+      {isLoading ? "Signing in..." : `Sign in with ${provider.charAt(0).toUpperCase() + provider.slice(1)}`}
     </Button>
   );
 }
